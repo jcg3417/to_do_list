@@ -1,18 +1,18 @@
 function addTask() {
-    var taskInput = document.getElementById("taskInput")
-    var taskList = document.getElementById("taskList")
+    const taskInput = document.getElementById("taskInput")
+    const taskList = document.getElementById("taskList")
 
     if (taskInput.value === "") {
         alert("Please enter a task.")
         return
     }
 
-    var li = document.createElement("li")
-    var taskText = document.createTextNode(taskInput.value)
+    const li = document.createElement("li")
+    const taskText = document.createTextNode(taskInput.value)
     li.appendChild(taskText)
 
-    var span = document.createElement("span")
-    var closeBtn = document.createTextNode("×")
+    const span = document.createElement("span")
+    const closeBtn = document.createTextNode("×")
     span.className = "close"
     span.appendChild(closeBtn)
     li.appendChild(span)
@@ -21,10 +21,10 @@ function addTask() {
 
     taskInput.value = ""
 
-    var close = document.getElementsByClassName("close")
-    for (var i = 0; i < close.length; i++) {
+    const close = document.getElementsByClassName("close")
+    for (const i = 0; i < close.length; i++) {
         close[i].onclick = function () {
-            var listItem = this.parentElement
+            const listItem = this.parentElement
             listItem.style.display = "none"
         }
     }
