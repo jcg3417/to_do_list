@@ -33,3 +33,5 @@ function addTask() {
         this.classList.toggle("completed")
     }
 }
+
+const test = "test"
