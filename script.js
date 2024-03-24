@@ -35,3 +35,4 @@ function addTask() {
 }
 
 const test = "test"
+const test_2 = "test 2"
