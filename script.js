@@ -11,11 +11,11 @@ function addTask() {
     const taskText = document.createTextNode(taskInput.value)
     li.appendChild(taskText)
 
-    const span = document.createElement("span")
+    const deleteSymbol = document.createElement("deleteSymbol")
     const closeBtn = document.createTextNode("×")
-    span.className = "close"
-    span.appendChild(closeBtn)
-    li.appendChild(span)
+    deleteSymbol.className = "close"
+    deleteSymbol.appendChild(closeBtn)
+    li.appendChild(deleteSymbol)
 
     taskList.appendChild(li)
 
