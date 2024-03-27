@@ -33,6 +33,3 @@ function addTask() {
         this.classList.toggle("completed")
     }
 }
-
-const test = "test"
-const test_2 = "test 2"
