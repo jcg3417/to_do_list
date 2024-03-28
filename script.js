@@ -22,7 +22,7 @@ function addTask() {
     taskInput.value = ""
 
     const close = document.getElementsByClassName("close")
-    for (const i = 0; i < close.length; i++) {
+    for (let i = 0; i < close.length; i++) {
         close[i].onclick = function () {
             const listItem = this.parentElement
             listItem.style.display = "none"
