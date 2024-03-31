@@ -1,3 +1,13 @@
+h1 {
+    animation: cssAnimation_0 2885ms infinite linear;
+}
+
+@keyframes cssAnimation_0 {
+    to {
+        transform: rotate(360deg) translate(0px, 0px);
+    }
+}
+
 body {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -23,8 +33,6 @@ h1 {
 .close {
     font-size: x-large;
     padding-left: 1%;
-    display: flex;
-    justify-content: right;
 }
 
 .close:hover {
@@ -71,8 +79,6 @@ ul {
 }
 
 li {
-    display: flex;
-    justify-content: left;
     font-size: large;
     margin: 20px 0;
     padding: 20px;
