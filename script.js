@@ -39,6 +39,7 @@ function addTask() {
     }
 }
 
+// Excute button with Enter key
 document.addEventListener(
     "keydown",
     (event) => {
@@ -50,21 +51,6 @@ document.addEventListener(
             console.log("addTask conducted")
             return
         }
-
-        // if (event.ctrlKey) {
-        //     // Even though event.key is not 'Control' (e.g., 'a' is pressed),
-        //     // event.ctrlKey may be true if Ctrl key is pressed at the same time.
-        //     alert(`Combination of ctrlKey + ${keyName}`)
-        // } else {
-        //     alert(`Key pressed ${keyName}`)
-        // }
     },
     false
 )
-
-//ElementById test
-function changeColor(newColor) {
-    const elem = document.getElementById("para")
-    console.log(elem)
-    elem.style.color = newColor
-}
