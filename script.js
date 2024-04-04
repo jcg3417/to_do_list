@@ -1,16 +1,20 @@
 function addTask() {
+    // Grabbing HTML elements
     const taskInput = document.getElementById("taskInput")
     const taskList = document.getElementById("taskList")
 
+    // Alert message when input is empty
     if (taskInput.value === "") {
         alert("Please enter a task.")
         return
     }
 
+    // Appending taskInput value as li
     const li = document.createElement("li")
     const taskText = document.createTextNode(taskInput.value)
     li.appendChild(taskText)
 
+    // Delete button
     const deleteSymbol = document.createElement("deleteSymbol")
     const closeBtn = document.createTextNode("×")
     deleteSymbol.className = "close"
@@ -21,6 +25,7 @@ function addTask() {
 
     taskInput.value = ""
 
+    // Changing status after deleting button
     const close = document.getElementsByClassName("close")
     for (let i = 0; i < close.length; i++) {
         close[i].onclick = function () {
